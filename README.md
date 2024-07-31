@@ -1,11 +1,5 @@
 
-<p align="center"><img src="logo/git-e-github.png" width="270"></p>
-
-<div style="text-align: center;">
-  <span style="font-size: 40px;"><strong>Git e GitHub<strong/></span>
-</div>
-
-<br>
+<p align="center"><img src="logo/git-e-github.png" width="500"></p>
 
 # Git - Sistema de versionamento:
 Controla as modificações de um projeto por meio de versões chamadas "commits".
