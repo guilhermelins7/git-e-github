@@ -243,3 +243,63 @@ Define como o código pode ser usado, como a licença MIT, que permite uso comer
 
 ### Recursos Visuais e Adicionais: 
 Imagens, gifs, vídeos e badges podem ser adicionados para ilustrar o uso e funcionalidades do projeto.
+
+# Resolvendo problemas comuns com Git:
+
+```bash
+Boa prática: sempre utilizar git status para vericar o status 
+atual do projeto antes de fazer modificações.
+```
+
+## Removendo arquivos da área de Stage (Unstaged):
+
+```bash
+git reset
+```
+
+## Desfazer modificações não salvas (voltar ao último commit / HEAD):
+
+```bash
+git reset # tirar os arquivos da área de stage.
+ 
+git clean -df # forçar remoção de arquivos não rastreados e diretórios vazios.
+
+git checkout -- . # limpar modificações de arquivos
+
+```
+
+## Editor VIM:
+
+Editor de texto configurável que é incluso junto ao Git Bash no ato de sua instalação. É usado como editor padrão para escrever mensagens de commit, editar arquivos de configuração e resolver conflitos de merge, proporcionando edição rápida e eficiente no terminal
+
+### VIM pode ser aberto no terminal quando é feito um commit sem mensagem:
+
+```bash
+git commit
+```
+
+![alt text](images/vim.png)
+
+### Comandos básicos:
+
+#### Habilitar o modo de edição:
+
+```bash
+i
+```
+
+#### Sair do VIM, salvando as alterações:
+
+```bash
+<ESC>
+:wq # write / quit
+<ENTER>
+```
+
+#### Sair do VIM, descartando as alterações:
+
+```bash
+<ESC>
+:q! # quit
+<ENTER>
+```
