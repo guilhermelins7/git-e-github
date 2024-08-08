@@ -1,5 +1,5 @@
 
-<p align="center"><img src="logo/git-e-github.png" width="500"></p>
+<p align="center"><img src="images/git-e-github.png" width="500"></p>
 
 # Git - Sistema de versionamento:
 Controla as modificações de um projeto por meio de versões chamadas "commits".
@@ -302,4 +302,51 @@ i
 <ESC>
 :q! # quit
 <ENTER>
+```
+
+## Desfazendo e Deletando Commits:
+
+### Desfazer último commit mantendo as alterações:
+
+```bash
+git status # conferir status atual
+git reset --soft HEAD~1 # desfazer o último commit mantendo as alterações.
+```
+
+### Deletando commits e modificações nos arquivos (repositório local):
+
+#### Voltar o projeto ao estado de um dado commit, (deletando commits e alterações posteriores):
+
+```bash
+git status # conferir status atual
+
+git reset --hard <código do commit> # executar ação com base no código do commit.
+```
+
+#### Exemplo: voltar o projeto ao estado do penúltimo commit:
+
+```bash
+git reset --hard HEAD~1
+```
+
+## Deletando histórico de commits em repositório remoto:
+
+### ALERTA: Operação destrutiva e irreversível: recomenda-se clonar o repositório localmente antes de executar, pois não será possível recuperar o histórico de commits deletado.
+
+```bash
+git rebase -i <código do commit> # realizar rebase interativo no VIM.
+```
+
+### Exemplo com <HEAD~2>, **VIM** Será aberto da forma abaixo:
+
+![alt text](images/vim_DeletandoCommits.png)
+
+#### Para indicar qual commit será deletado, basta entrar no modo de edição (TECLA i), substituir no o “pick” por “drop”, salvar a alteração e sair utilizando “:wq”, assim executando a remoção localmente.
+
+![alt text](images/vim_drop.png)
+
+### Para finalizar, basta fazer um push forçado utilizando o comando abaixo:
+
+```bash
+git push --force
 ```
