@@ -366,3 +366,7 @@ notar que o commit mais recente foi feito diretamento no GitHub.
 …
 
 ### Commits atuais no computador (repositório local):
+
+notar que o último registro presente no remoto informado (origin/main) é o 8b78782. Ou seja, repostitório foi atualizado a partir de uma versão anterior à atual do remoto.
+
+![alt text](images/historico_commits2.png)
