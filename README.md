@@ -350,3 +350,14 @@ git rebase -i <código do commit> # realizar rebase interativo no VIM.
 ```bash
 git push --force
 ```
+
+## Atualizando repositório local em relação ao Remoto:
+
+- Atualização em casos do repositório local estar em versões anteriores ao remoto:
+
+```bash
+git log # conferir histórico atual de commits do projeto
+
+git pull <nome do remote> <nome do branch> # Atualizar em relação ao remoto.
+# ex projeto atual: git pull origin main
+```
