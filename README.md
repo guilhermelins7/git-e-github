@@ -351,6 +351,7 @@ git rebase -i <código do commit> # realizar rebase interativo no VIM.
 git push --force
 ```
 
+<<<<<<< HEAD
 # Resolvendo push rejeitado:
 
 ## Divergência no histórico de commits local e remoto:
@@ -370,3 +371,15 @@ notar que o commit mais recente foi feito diretamento no GitHub.
 notar que o último registro presente no remoto informado (origin/main) é o 8b78782. Ou seja, repostitório foi atualizado a partir de uma versão anterior à atual do remoto.
 
 ![alt text](images/historico_commits2.png)
+=======
+## Atualizando repositório local em relação ao Remoto:
+
+- Atualização em casos do repositório local estar em versões anteriores ao remoto:
+
+```bash
+git log # conferir histórico atual de commits do projeto
+
+git pull <nome do remote> <nome do branch> # Atualizar em relação ao remoto.
+# ex projeto atual: git pull origin main
+```
+>>>>>>> 3360d2f246c98fa89c9c7cc01c991557a8013602
