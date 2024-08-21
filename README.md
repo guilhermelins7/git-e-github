@@ -350,3 +350,19 @@ git rebase -i <código do commit> # realizar rebase interativo no VIM.
 ```bash
 git push --force
 ```
+
+# Resolvendo push rejeitado:
+
+## Divergência no histórico de commits local e remoto:
+
+- Não é permitido enviar um push se seu repositório local está atrasado em
+relação ao histórico do repositório remoto! Por exemplo:
+
+### Commits atuais do projeto no GitHub (repositório remoto):
+
+notar que o commit mais recente foi feito diretamento no GitHub.
+
+![alt text](images/historico_commits.png)
+…
+
+### Commits atuais no computador (repositório local):
