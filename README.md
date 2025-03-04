@@ -1,6 +1,4 @@
-<div align="center"><img src="images/git-e-github.png" width="500"></div>
-
-# Git e Git Hub:
+<div align="center"><img src="images/git-e-github.png" width="100%"></div>
 
 # GIT Fundamental:
 
@@ -56,7 +54,7 @@ git config --global --unset <tag ex: user.nome>
 ### Checar localização da configuração em arquivo:
 
 ```bash
-git config --global --show-origin <condiguracao_global> 
+git config --global --show-origin <condiguracao_global>
 																	# exemplo: user.name || user.email
 ```
 
@@ -155,12 +153,12 @@ Mensagens de commits devem ser **claras e objetivas** para facilitar a compreens
 ## Boas práticas para escrever commits
 
 - **Seja conciso e direto:** A primeira linha da mensagem deve conter, no máximo, **72 caracteres**. Se precisar adicionar mais detalhes, utilize uma nova mensagem com `m` ou um corpo de descrição separado.
-- **Use verbos no infinitivo:** Comece a mensagem com um verbo no infinitivo que descreva a ação realizada, como "adicionar", "corrigir" ou "atualizar". *Exemplo:*
-    - ✅ `"Atualizar texto do título da página"`
-    - ❌ `"Atualizado o título da página"`
+- **Use verbos no infinitivo:** Comece a mensagem com um verbo no infinitivo que descreva a ação realizada, como "adicionar", "corrigir" ou "atualizar". _Exemplo:_
+  - ✅ `"Atualizar texto do título da página"`
+  - ❌ `"Atualizado o título da página"`
 - **Evite detalhes técnicos excessivos:** Mensagens de commit devem descrever a mudança de forma compreensível para toda a equipe. Informações mais técnicas podem ser detalhadas nos comentários do código ou na documentação.
 
-🔹 *Lembre-se: o histórico de commits serve como documentação do projeto. Quem for ler suas mensagens pode não ter o contexto original, então escreva de forma clara e descritiva.*
+🔹 _Lembre-se: o histórico de commits serve como documentação do projeto. Quem for ler suas mensagens pode não ter o contexto original, então escreva de forma clara e descritiva._
 
 ## Conventional Commits
 
@@ -168,12 +166,12 @@ O padrão [**Conventional Commits**](https://www.conventionalcommits.org/pt-br/v
 
 ### Principais tipos de commits
 
-| Tipo | Descrição | Exemplo |
-| --- | --- | --- |
-| **feat** | Adição de uma nova funcionalidade. | `feat: implementar método para criação de conta bancária` |
-| **fix** | Correção de bugs. | `fix: corrigir cálculo de saldo ao transferir fundos` |
-| **refactor** | Melhorias no código sem alterar a funcionalidade. | `refactor: simplificar lógica do método Depositar` |
-| **docs** | Alteração na documentação. | `docs: adicionar explicação para o método Sacar` |
+| Tipo         | Descrição                                         | Exemplo                                                   |
+| ------------ | ------------------------------------------------- | --------------------------------------------------------- |
+| **feat**     | Adição de uma nova funcionalidade.                | `feat: implementar método para criação de conta bancária` |
+| **fix**      | Correção de bugs.                                 | `fix: corrigir cálculo de saldo ao transferir fundos`     |
+| **refactor** | Melhorias no código sem alterar a funcionalidade. | `refactor: simplificar lógica do método Depositar`        |
+| **docs**     | Alteração na documentação.                        | `docs: adicionar explicação para o método Sacar`          |
 
 Seguir essas diretrizes ajuda a manter um histórico limpo e compreensível para todos os colaboradores do projeto. 🚀
 
@@ -368,7 +366,7 @@ Projetos reais utilizam bibliotecas externas (programas prontos disponíveis na 
 
 - **Arquivos de configuração da sua IDE:**
 
-IDE's podem salvar uma subpasta com arquivos de configuração na pasta do projeto (exemplo: .vscode). 
+IDE's podem salvar uma subpasta com arquivos de configuração na pasta do projeto (exemplo: .vscode).
 
 - **Arquivos de configuração do seu sistema**
 
@@ -389,7 +387,7 @@ git log --graph # Visualização em grafo de acordo com branchs.
 
 # opções de personalização:
 
-git log --pretty 
+git log --pretty
 git log --format
 
 # exibindo o log e outra branch:
@@ -411,8 +409,8 @@ git reflog
 ### git diff (diferença entre dois pontos)
 
 ```bash
-git diff 
-# Exibe diferença de arquivos que estão fora do stage, exibindo o que foi ... 
+git diff
+# Exibe diferença de arquivos que estão fora do stage, exibindo o que foi ...
 # ... adicionado ou removido.
 
 git diff <aquivo> # Exibe diferenças de um determinado arquivo.
@@ -472,7 +470,7 @@ Utilizar o git checkout, você consegue visualizar como estavam como estavam seu
 
 ```bash
 git checkout <commit>
-# volta o seu ambiente de trabalho para o estado de como estavam os arquivos 
+# volta o seu ambiente de trabalho para o estado de como estavam os arquivos
 # - nesse commit em específico.
 ```
 
